@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Video-Game-Controller-Icon-D-Edit.svg/1024px-Video-Game-Controller-Icon-D-Edit.svg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Its Gaming Time</title>
+
+    <style>
+        body {margin: 0;background-color: #a7ffa7;
+        background: linear-gradient(to bottom,#C6FFDD,#FBD786,#f7797d);}
+        
+        .header{
+            position: fixed;
+            border-bottom: 6px solid black;
+            top: 0;
+            width: 100%;
+            height: 100px;
+        }
+        
+        .title{
+            position: sticky;
+            margin: 15px ;
+            font-size: 300%;
+            text-align: center;
+            color: white;
+            font-family: Anta;
+        }
+
+        /* .head-img{
+            position: fixed;
+            top: 0;
+            opacity: 100%;
+            filter: blur(3px);
+        } */
+
+        .header{
+            background-image: linear-gradient(to left,#870000,#190A05);
+        }
+
+        .glogo{
+            position: fixed;
+            top: 0;
+            left: 10%;
+            border-radius: 5000px;
+            width: 96px;
+        }
+
+        .profile{
+            cursor: pointer;
+            position: fixed;
+            display: inline-block;
+            right: 13%;
+            top: 14px;
+            width: 70px;
+        }
+
+        .dropdown button{
+            display: none;
+            font-family: Anta;
+            color: white;
+            border: 2px solid red;
+            margin-bottom: 4px;
+            border-radius: 25px;
+            background-color: black;
+            padding: 10px;
+            width: 150px;
+        }
+        
+        .profile:hover .dropdown button{
+            display: block;
+            cursor: pointer;
+        }
+
+        .sidebar{
+            position: fixed;
+            left: 1px;
+            top: 107px;
+            width: 12%;
+        }
+
+        table,tr,td{
+            text-align: center;
+            height: 76px;
+            width: 180%;
+            border: 2px solid black;
+            border-collapse: collapse;
+            font-family: Montserrat;
+            background: linear-gradient(to right, #0a151a,#203A43,#2C5364);
+        }
+
+        table a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        table td:hover{
+            cursor: pointer;
+            background: linear-gradient(to left,#333333,#dd1818);
+        }
+
+        .footer{
+            background: linear-gradient(to right, #0f0c29,#302b63,#24243e);
+            color: white;
+            width: 100%;
+            border-top: 3px solid blue;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .copyright{
+            position: fixed;
+            left: 5px;
+        }
+
+        .developer{
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 80%;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .developer:hover {cursor: pointer;}
+
+        .developer:hover .hide{
+            display: block;
+        }
+
+        .main{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            padding: 5px;
+            margin-top: 100px;
+            margin-left: 22%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="header">
+        <!-- <img class="head-img" src="Resources/head.jpeg" alt="background-img" width="100%" height="100px">     -->
+        
+        <div>
+            <img class="glogo" src="Resources/Gaming Logo.jpeg" alt="Logo">
+        </div>
+
+        <div class="title">Gaming Timez</div>
+
+        <div class="profile">
+            <img src="Resources/icons8-user.gif" alt="profile_pic" style="border-radius: 35px;width: 75px;">
+            
+            <div class="dropdown">
+                <button>Login</button>
+                <button>Sign Up</button>
+                <button>Forget Password</button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="sidebar">
+        <table cellpadding="5px">
+            <tr><td><a href="https://www.gamezone.com/news/top-10-mobile-games-in-2024/" target="_blank">Top 10 Mobile Games</a></td></tr>
+            <tr><td><a href="https://www.retrogames.cz/?language=EN" target="_blank">Play Retro(90's) Games Online</a></td></tr>
+            <tr><td><a href="https://gamerant.com/video-game-release-dates-2024-new-upcoming/" target="_blank">Upcoming Games</a></td></tr>
+            <tr><td><a href="https://www.gamesradar.com/gta-6-guide/#:~:text=So%20far%2C%20it%20has%20been,and%20entertainment%20systems%20in%202025%22." target="_blank">GTA 6 Updates !</a></td></tr>
+            <tr><td><a href="https://www.gamespot.com/news/" target="_blank">Gaming News</a></td></tr>
+        </table>
+    </div>
+
+    <div class="main" id="main">
+        
+        <h1 style="font-family: Montserrat; color: red;">Video Games in India</h1>
+
+        <p>
+            <span style="margin-left: 7vw;">Video gaming in India is an emerging market since India is experiencing strong growth in online gaming,</span> 
+            making it one of the top gaming markets in the world. Over the past few decades, the Indian gaming industry has
+            gone from close to nonexistent in the 1990s to one of the top markets globally in the late 2010s. In 2019, the online
+            gaming market in India was estimated at ₹6,200 crore (US$780 million) with an estimated 300 million gamers, a 41.6% increase
+            from 2018. As of 2021, it is one of the top five mobile gaming markets in the world. By the third quarter of 2020 there were
+            more than 7.4 billion mobile game downloads. According to the "State of India Gaming Report," released by venture capital firm
+            Lumikai with Google, as of November 2023, there were 568 million gamers in India. Additionally, it was reported that in FY23,
+            41% of gamers were female and 66% were from non-metros, with each user on average spending 10-12 hours per week on video games.
+            Video game development in India is still underdeveloped compared to other Asian countries, such as China and South Korea.However,
+            the growing amount of gamers in India has attracted interest from global video game companies. As investments from international
+            video game companies continue to rise, more global game studios such as Ubisoft and Microsoft Games have opened offices in India.
+            Local Indian game studios are also steadily growing. India went from 15 game development studios to 275 from 2009 to 2021.
+            The growing presence of video games in India has led to bans and regulations on gaming imposed by the Indian government.
+        </p>
+
+        <center>
+        <video autoplay loop muted style="width: 75%;height: 100%;">
+            <source src="Resources/Trailer.mp4#t=1.5,65" type="video/mp4">
+        </video>
+        </center>
+
+        <h2 style="font-family: Montserrat; color: red;">History</h2>
+        <h3 style="font-family: Montserrat">Growth of Gaming Devices</h3>
+        
+        <p>
+            In India, video games used to only be available at video game parlours, where games came in the form of coin-operated machines.
+            In the 1990s, 8-bit NES clones that ran on cartridges were introduced to India. Each cartridge contained many classic games like
+            Super Mario Bros or Contra. These game consoles allowed people to play games inside their homes, which sparked the initial growth
+            of the popularity of video games in India. In the mid-to-late-90s, sales in personal computers skyrocketed and replaced the 8-bit
+            consoles.Players were also now able to install games on PCs rather than purchase cartridges.The PC remains one of the most popular
+            devices for games today, with 87% of surveyed gamers preferring it over mobile gaming. The PlayStation also remains fairly popular, 
+            though not as much as the PC since console games tend to cost more. In the 2000s, mobile devices became more common in India. This
+            caused a huge growth in gaming because most smartphones had access to mobile games.In 2020, there were 696 million smartphone users,
+            compared to 2013 where there were 76 million users. India expects to reach 970 million users by 2025.
+        </p>
+        
+        <h2 style="font-family: Montserrat; color: red;">Esports</h2>
+        <p>
+            In February 2021, the hashtag #RecognizeEsportsInIndia trended on Twitter, which caught the attention of the Indian government.
+            A few weeks later, the Indian Olympic Association (IOA) announced esports as an official sport and the Esports Federation of India
+            (ESFI) as its governing body.Before this announcement, esports were considered a demonstration sport in India.At Asian Games 2018,
+            Tirth "gcttirth" Mehta from Bhuj, Gujarat won India's first esports medal for Hearthstone, one of the six game titles selected for the
+            competition.He bagged the bronze medal at this demonstration event. Karan “Jin Kazama” Manganani from Jaipur was placed 4th for Clash
+            Royale at the same tournament. These two, along with Moinuddin Amdani and Abhinav Tejan, have been recognized by the ESFI as the top
+            4 esports athletes and will represent the country at "global competitions". In February 2022, INOX Leisure partnered with Esports
+            Federation of India (ESFI) to exclusively host and promote ESFI tournaments in its cinemas across the country. Esports revenue in
+            India grew by 29% from ₹750 crore in 2020 to ₹970 crore in 2021. The number of players doubled to 600,000 in 2021, while the
+            viewership grew to 2 million hours in the same year. The number of players is projected to reach 1 million in 2022, of which 
+            20 percent would be female.
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/Video_games_in_India" target="_blank" style="text-decoration: none;color: green;"><h3>Wanna Read More! Click This</h3></a>
+
+        <h2 style="font-family: Montserrat;color: red;">G.O.A.T (Greatest of All Times)</h2>
+        <div style="display: inline-block;position: static;margin-right: 5px;">
+            <a href="https://www.rockstargames.com/gta-v" target="_blank"><img src="https://pngimg.com/d/gta_PNG13.png" alt="gtav" width="20%"></a>
+            <a href="https://www.minecraft.net/en-us" target="_blank"><img src="https://freepngimg.com/save/19500-minecraft-logo-png/1920x700" alt="minecraft" width="30%" style="margin-bottom: 5%;"></a>
+        </div>
+        
+        <h2 style="font-family: Montserrat;color: red;">Battle Royal Games</h2>
+        <div style="display: inline-block;position: relative;margin-right: 5px;">
+            <a href="https://ff.garena.com/en/" target="_blank"><img src="https://www.pngmart.com/files/22/Garena-Free-Fire-Logo-PNG-HD-Isolated.png" alt="ff" width="20%" style="margin-bottom: 5%;margin-right: 15px;"></a>
+            <a href="https://www.battlegroundsmobileindia.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/PUBG_Mobile_simple_logo_black.png" alt="pubg" width="17%" style="margin-right: 15px;border-radius: 15px;"></a>
+            <a href="https://playvalorant.com/en-gb/" target="_blank"><img src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="valo" width="14%" style="margin-right: 15px;border-radius: 15px;"></a>
+            <a href="https://www.fortnite.com/" target="_blank"><img src="https://img1.yeggi.com/page_images_cache/2809923_fortnite-logo-by-lukas1272" alt="fort" width="15%" style="border-radius: 15px;"></a>
+            <br><br>
+            <a href="#main" style="text-decoration: none;color: blue;text-align: center;"><p>Revisit the page!!</p></a>
+            <br><br><br><br><br>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        
+        <div class="copyright">
+            <a href="https://www.websitepolicies.com/blog/copyright-disclaimer" target="_blank" style="text-decoration: none;color: white;font-family: Arial, Helvetica, sans-serif;"><p>&copy; Copyright Disclaimar</p></a>
+        </div>
+
+        <div class="developer">
+            <p>Made by Raghav.N</p>
+            <div class="hide">
+            <font color="white">Contact:</font>
+            <a class="Insta" href="https://www.instagram.com/raghav.795/" target="_blank" style="margin-right: 5%;"><img src="Resources/Instagram.png" alt="Insta" width="10%"></a>
+            <a class="LinkedIn" href="https://www.linkedin.com/in/raghav-nagarajan-2235032ab/" target="blank"><img src="Resources/Linkedin.png" alt="LinkedIn" width="10%"></a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
